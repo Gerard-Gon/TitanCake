@@ -1,0 +1,78 @@
+/*Esto es el estilo de la tarjeta completa*/
+.card{
+    width: 450px;
+    height: 450px;
+    flex: 1 0 auto;
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+    background-color: rgb(233, 233, 192) !important;
+}
+/*Estilo del texto de la tarjeta que esta oculta con 0% de opacidad
+  y con una transicion de 0.2 segundos*/
+.card-title{
+    font-family: 'Cream cake', cursive;
+    color: red !important;
+    font-size: 30px !important;
+    opacity: 0%;
+    width:  450px;
+    height: 350px;
+    border: 3px solid rgb(189, 196, 125);
+    background-color: beige ;
+    transition: 0.2s;
+
+
+}
+/*Un hover en la tarjeta que hace que aparezca dandole 100% de opacidad*/
+.card-title:hover{
+    opacity: 100%;
+
+}
+
+/*Estilo detalle*/
+.detalle{
+    width:  90%;
+    height: auto;
+}
+/*Estilo de las imagenes pasteles*/
+.pasteles{
+    max-width: 450px ;
+    height: 350px;
+    flex: 1 0 auto;
+}
+
+/*Estilo del precio de la tarjeta*/
+.detalles{
+    font-size: 25px;
+    font-family: 'Cream cake', cursive;
+}
+
+/*Estilo del boton de las cartas*/
+.btn-floating{ 
+
+   background-color: rgb(186, 130, 77) !important ;
+
+}
+
+/*Estilo de la caja y texto Nosotros*/
+.cajita{
+    width: auto;
+    background-color: #D7BFAE;
+    color: black;
+    font-family: 'Cream Cake', cursive;
+    font-size: 35px;
+    padding: 0px 10px 20px 30px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin: 10px;
+    user-select: none;
+}
+
+/*Un hover a la Cajita cambiando el cursor,El color de la letra*/
+.cajita:hover{
+    color: black;
+    cursor: pointer;
+    width: auto;
+    font-size: auto;
+    font-family: 'Cream Cake',cursive;
+    font-weight: bold;
+}

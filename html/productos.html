@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/productostyle.css">
+</head>
+<body>
+    <nav>
+    <div class="nav-wrapper brown">
+        <a href="/index.html" class="brand-logo left">TitanCake</a>
+        <a href="/html/productos.html" class="right">
+            <i class="material-icons white-text" style="margin-right: 20px;">shopping_cart</i>
+        </a>
+        <div class="center-nav">
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+            <li><a class="nav" href="/index.html">Inicio</a></li>
+            <li><a class="nav" href="/html/registro.html">Registro Usuario</a></li>
+            <li><a class="nav" href="/html/sesion.html">Iniciar Sesión</a></li>
+            <li><a class="nav" href="/html/nosotros.html">Nosotros</a></li>
+            <li><a class="nav" href="/html/blogs.html">Blogs</a></li>
+            <li><a class="nav" href="/html/contactos.html">Contáctanos</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+<main class="fondo">
+  <div class="centrador">
+    <h2 class="titulo">Productos</h2>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img class="pasteles" src="/assets/img/berlin.webp" alt="berlin dulce">
+            <span class="card-title texto-tarjeta"><p class="detalle">Una delicia tradicional: masa suave y esponjosa, frita a la perfección y rellena con abundante crema pastelera casera. Cubierto con una fina capa de azúcar flor que realza su dulzura. </p></span>
+            <a class="btn-floating halfway-fab waves-effect waves-light green" onclick="agregarProducto('berlin')">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <p class="detalles">Precio</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img class="pasteles" src="/assets/img/chilenitos.webp" alt="chilenito dulce">
+            <span class="card-title texto-tarjeta"><p class="detalle">Delicados y crujientes, nuestros chilenitos están elaborados con masa hojaldrada y rellenos con abundante manjar casero. Cada unidad es una explosión de sabor tradicional. </p></span>
+            <a class="btn-floating halfway-fab waves-effect waves-light green" onclick="agregarProducto('chilenito')">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <p class="detalles">Precio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img class="pasteles" src="/assets/img/empolvados.webp" alt="empolvado dulce">
+            <span class="card-title texto-tarjeta"><p class="detalle">Nuestros empolvados son una oda al sabor chileno: suaves bizcochitos tipo esponja, rellenos con generoso manjar casero y cubiertos con una delicada capa de azúcar flor,dejando una sensación dulce y reconfortante.</p></span>
+            <a class="btn-floating halfway-fab waves-effect waves-light green" onclick="agregarProducto('empolvado')">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <p class="detalles">Precio</p>
+          </div>
+        </div>
+      <div class="col s12 m11">
+        <div class="card-total">
+          <div class="card-content">
+            <span class="card-title resumen">Resumen de Compra</span>
+            <table class="highlight">
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Quitar</th>
+                </tr>
+              </thead>
+              <tbody id="tabla-productos"></tbody>
+            </table>
+              <h5>Total: $<span id="total-compra">0</span></h5>
+          </div>
+          <div class="card-action center-align">
+            <a class="waves-effect waves-light btn brown">Finalizar Compra</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img class="pasteles" src="/assets/img/merengue.webp" alt="merengue dulce">
+            <span class="card-title texto-tarjeta"><p class="detalle">Una joya de la repostería nacional: capas de merengue crocante, rellenas con abundante manjar casero y cubiertas con azúcar flor. Su textura ligera y su dulzura equilibrada lo convierten en el favorito de generaciones.</p></span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red" onclick="agregarProducto('merengue')"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p class="detalles">Precio</p>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</main>
+
+<footer class="page-footer brown">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Derechos Reservados</h5>
+        <p class="grey-text text-lighten-4">
+          “Todos los derechos reservados. Si lo copias, tu celular empezará a reproducir Baby Shark en loop infinito hasta que confieses tus crímenes.”
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="/html/productos.html">Productos</a></li>
+          <li><a class="grey-text text-lighten-3" href="/html/registro.html">Registro</a></li>
+          <li><a class="grey-text text-lighten-3" href="/html/sesion.html">Iniciar Sesión</a></li>
+          <li><a class="grey-text text-lighten-3" href="/html/nosotros.html">Sobre nosotros</a></li>
+          <li><a class="grey-text text-lighten-3" href="/html/blogs.html">Blogs</a></li>
+          <li><a class="grey-text text-lighten-3" href="/html/contactos.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container">
+      © 2025 Todos los derechos reservados 
+      <a class="grey-text text-lighten-4 right" href="#!"></a>
+    </div>
+  </div>
+</footer>
+    
+</body>
+    <script src="/assets/js/carrito.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

@@ -1,0 +1,44 @@
+/*Estilo tarjeta resumen*/
+span.resumen {
+    font-family: 'Cream cake', cursive;
+    color: red !important;
+    font-size: 30px !important;
+    width:  450px;
+    height: 350px;
+    background-color: beige;
+    transition: 0.2s;
+}
+
+/*Ajusta el tamaño de la imagen de la tarjeta*/
+.pasteles{
+    max-width: 450px ;
+    height: 350px;
+    flex: 1 0 auto;
+}
+/*Estilo de la tarjeta al lado de resumen */
+span.detalles{
+    font-family: 'Cream cake', cursive;
+    color: red !important;
+    font-size: 30px !important;
+    opacity: 0%;
+    width:  450px;
+    height: 350px;
+    border: 3px solid rgb(189, 196, 125);
+    background-color: beige;
+    transition: 0.2s;
+}
+/*la misma funcionalidad que la de productos*/
+span.detalles:hover{
+    opacity: 100%;
+
+}
+/*Estilo de la tarjeta*/
+.card{
+    width: 450px;
+    height: 450px;
+    flex: 1 0 auto;
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+    background-color: rgb(233, 233, 192);
+}
+

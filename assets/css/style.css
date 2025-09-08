@@ -1,0 +1,121 @@
+/*Archivo css que maneja el estilo de la pagina completa*/
+
+/*Para centrar las etiquetas de Inicio-Producto-Registro,etc.*/
+.center-nav {
+  display: flex;
+  justify-content: center;
+}
+
+#nav-mobile{
+  font-family: 'Cream cake',cursive;
+  font-size: auto;
+}
+
+/*Aca importamos la fuente descargada llamada Cream Cake*/
+@font-face {
+  font-family: 'Cream Cake';
+  src: url(/assets/font/Cream\ Cake.otf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Manejo del titulo principal de los html*/
+.titulo{
+  font-family: 'Cream Cake' , cursive;
+  font-size: 6.1vw; 
+  width: 50% 50%;
+  max-width: 900px; 
+  margin: 20px auto;
+  background-color: rgb(121, 121, 65);
+  color: rgb(232, 239, 211);
+  padding: 10px 20px;
+  border: 10px solid rgb(123, 128, 74);
+  border-radius: 8px;
+  user-select: none;
+}
+
+/*Este controla los estilos de Inicio-Producto-Registro,etc.*/
+.nav{
+  color: beige;
+  font-size: 25px;
+
+}
+
+/*Logo o donde esta el nombre de la pagina TitanCake*/
+.brand-logo{
+  font-family: 'Cream cake', cursive;
+  color: beige;
+  font-size: 6vw !important;
+  min-width: 30px !important;
+}
+
+/*
+.logo{
+    width: 82px ;
+    height: auto ;
+    font-size: medium;
+ 
+}
+*/
+
+/*Con esto centramos los objetos de la pagina completa*/
+.centrador{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*Estilo del background de la pagina*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: beige;
+  
+}
+
+/*
+main {
+  flex: 1 0 auto;
+}
+*/
+
+
+.letra-nos{
+  font-size: 32px;
+  font-family: "Cream cake", cursive;
+  color: black;
+}
+
+
+.fondo {
+  background-image: url('/assets/img/fondo-beige-con-dibu.webp');
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;   
+  min-height: 100vh;             
+  padding: 50px 20px;             
+  color: #3e2723;               
+}
+
+
+/*Con este solo cambio la font-family de la pagina completa y agrego otras 3 
+  predeterminadas por si la font-family importada no carga bien*/
+
+.page-footer{
+
+  font-size: 24px;
+  font-family: 'Cream Cake',cursive;
+
+}
+
+
+
+
+
+
+
+

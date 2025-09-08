@@ -28,7 +28,7 @@ const productos = {
 let carrito = [];
 let total = 0;
 
-// Agrega producto al carrito usando su clave
+// Agrega producto al carrito usando su clave (''berlin'', ''merengue'', etc) que estan en la card de cada producto
 function agregarProducto(clave) {
   const producto = productos[clave];
   if (producto) {
@@ -38,14 +38,15 @@ function agregarProducto(clave) {
   }
 }
 
-// Quita producto por índice
+// Quitamos el producto por indice de la lista carrito
 function quitarProducto(index) {
   total -= carrito[index].precio;
   carrito.splice(index, 1);
   actualizarResumen();
 }
 
-// Actualiza la tabla y el total
+// Actualiza la tabla y el total mostrada en la card del resumen del producto
+
 function actualizarResumen() {
   const tabla = document.getElementById('tabla-productos');
   const totalSpan = document.getElementById('total-compra');
@@ -66,4 +67,20 @@ function actualizarResumen() {
   });
 
   totalSpan.textContent = total;
+}
+
+// función para finalizar la compra y accionada en el boton finalizar compra
+
+function finalizarCompra() {
+  if (carrito.length === 0) {
+    alert("El carrito está vacío");
+    return;
+  }else{
+
+  alert('Gracias por tu compra');
+  carrito = [];
+  total = 0;
+  actualizarResumen();
+
+  }
 }

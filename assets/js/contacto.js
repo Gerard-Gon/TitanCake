@@ -4,9 +4,9 @@ function validar(){
     let nombre = document.getElementById("first_name");
     let correo = document.getElementById("email");
     let comentario = document.getElementById("comentario");
-    let verNombre = validarFull("nombre",nombre.value);
+    let verNombre = validarFull("nombre",nombre.value) && validarCarateres("nombre",nombre.value);
     let verCorreo = validarFull("correo",correo.value);
-    let verComentario = validarFull("comentario",comentario.value);
+    let verComentario = validarFull("comentario",comentario.value) && validarCarateres2("comentario",comentario.value);
 
     if(verNombre == 1 && verCorreo == 1 && verComentario == 1){
         alert("Datos correctos ");
@@ -46,4 +46,24 @@ function validarCampos(texto){
     }else{
         return 1;
     }
+}
+
+// Función que valida el límite de caracteres.
+function validarCarateres(atributo, valor){
+    if(valor.length > 100){
+        alert(`El campo ${atributo} excede el límite de 100 caracteres`)
+        return 0;
+    }else{
+        return 1;
+    }
+}
+
+function validarCarateres2(atributo, valor){
+    if(valor.length > 500){
+        alert(`El campo ${atributo} excede el límite de 500 caracteres`)
+        return 0;
+    }else{
+        return 1;
+    }
+
 }
